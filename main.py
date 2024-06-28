@@ -4,11 +4,17 @@ import random
 def main():
     total = 0
     numbers = []
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
+    lastnum = 0
+    
+    while total < 100:
+        
+        newnum = random.randint(0,100)
+        
+        numbers.append(newnum)
+        total += newnum
+        lastnum = newnum
+
+    total -= lastnum
 
     print(f'The random values are {numbers}')
     print(f'The total is {total}')
